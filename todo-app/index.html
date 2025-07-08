@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Framework</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="module">
+    import { h, render } from '../framework/core.js';
+
+    const App = () => {
+      return h('div', { class: 'greeting' }, [
+        h('h1', {}, 'Hello from Mini Framework!'),
+        h('p', {}, 'This is your custom virtual DOM renderer.')
+      ]);
+    };
+
+    render(App(), document.getElementById('app'));
+  </script>
+</body>
+</html>
