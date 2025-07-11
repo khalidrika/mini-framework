@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shed.js • TodoMVC</title>
+    <link rel="shortcut icon" href="./assets/fav.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="learn-bar">
+    <aside class="learn">
+        <header>
+            <h3>Shed.js</h3>
+            <span class="source-links">
+                <a href="https://github.com/youssefhrouk/mini-framework">
+                    Source
+                </a>
+        </header>
+        <hr>
+        <blockquote class="quote speech-bubble">
+            <p>
+                Shed.js delivers just enough structure without the bloat of larger framework. Zero dependencies, pure
+                JavaScript, and a focused API make it ideal for developers who value simplicity, control, and
+                performance in their frontend workflow.
+            </p>
+        </blockquote>
+        <hr>
+        <h4>Official Resources</h4>
+        <ul>
+            <li>
+                <a href="https://github.com/youssefhrouk/mini-framework/tree/main/docs">
+                    Quick Start
+                </a>
+            </li>
+            <footer>
+                <hr>
+                <em>
+                    If you have other useful links to share, or if you notice that one of the above links is no longer
+                    working, please don't hesitate
+                    to <a href="https://github.com/youssefhrouk/mini-framework/issues">
+                        report an issue here.
+                    </a>
+                </em>
+            </footer>
+    </aside>
+    <section class="todoapp" id="root">
+        <header class="header" data-testid="header">
+            <h1>todos</h1>
+            <div class="input-container">
+                <input class="new-todo" id="todo-input" type="text" data-testid="text-input"
+                    placeholder="What needs to be done?" value="">
+            </div>
+        </header>
+        <main class="main" data-testid="main">
+            <ul class="todo-list" data-testid="todo-list"></ul>
+        </main>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>Created by the <a href="https://github.com/youssefhrouk/mini-framework/graphs/contributors">Shed.js</a> Team
+        </p>
+    </footer>
+    <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>
